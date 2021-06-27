@@ -1,0 +1,142 @@
+
+ 
+  body {
+    background: linear-gradient(45deg, #6e5800, #0e4a6e, #ff6347);
+    background-size: 600% 600%;
+    animation: GradientBackground 10s ease infinite;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+
+  @keyframes GradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  };
+  h2 {
+    background: #666;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+  }
+  .cardBox {
+    float: left;
+    font-size: 1.2em;
+    perspective: 800px;
+    margin-bottom: 4%;
+    transition: all 0.4s ease 0s;
+  }
+  .cardBox:hover .card {
+    transform: rotateY(180deg);
+  }
+  .card {
+    background: #666666;
+    cursor: pointer;
+    height: 35vh;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease 0s;
+    width: 100%;
+  }
+  .card p {
+    margin-bottom: .8em;
+  }
+  .card .front,
+  .card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  .card .back {
+    transform: rotateY( 180deg);
+  }
+  .card .back a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 130%;
+    transition: all 0.2s ease 0s;
+  }
+  .card .back .backcontent{
+    top: 20%;
+    position: relative;
+  }
+  .card .back .backcontent p{
+    font-size: 180%;
+  }
+  .card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+  }
+  .cardBox:nth-child(1) .card .back {
+    background: #ffcc00;
+  }
+  .cardBox:nth-child(2) .card .back {
+    background: #1c87c9;
+  }
+  .cardBox:nth-child(3) .card .back {
+    background: #ff6347;
+  }
+  .cardBox:nth-child(4) .card .back {
+    background: #8ebf42;
+  }
+  .cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+  }
+  .cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+  }
+  .cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+  }
+  @-webkit-keyframes giro {
+    from {
+      transform: rotateY(180deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+  }
+  @keyframes giro {
+    from {
+      transform: rotateY(180deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+  }
+  .gif{
+    height: 35vh;
+    width: 100%;
+  }
+ .logo{
+   margin: -5%;
+   padding: 0 !important;
+   margin: 0 !important;
+ }
+ .boxesContainer{
+   position: relative;
+   top: -10%;
+   margin-left: .5%;
+   margin-right: .5%;
+ }
