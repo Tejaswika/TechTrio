@@ -43,7 +43,7 @@
     cursor: pointer;
     height: 35vh;
     transform-style: preserve-3d;
-    transition: transform 0.5s ease 0s;
+    transition: transform 0.65s ease 0s;
     width: 100%;
   }
   .card p {
@@ -60,18 +60,22 @@
     position: absolute;
     text-align: center;
     width: 100%;
+    font-family: 'Acme', sans-serif;
   }
   .card .back {
     transform: rotateY( 180deg);
+    box-shadow:5px 5px 8px #242424b0;
   }
   .card .back a {
     padding: 0.3em 0.5em;
-    background: #333;
+    background: rgb(36, 36, 36);
     color: #fff;
     text-decoration: none;
-    border-radius: 1px;
+    border-radius: 28px;
     font-size: 130%;
+    font-family: 'Crimson Pro', serif;
     transition: all 0.2s ease 0s;
+    box-shadow:0px 5px 10px #242424b0;
   }
   .card .back .backcontent{
     top: 20%;
@@ -79,17 +83,19 @@
   }
   .card .back .backcontent p{
     font-size: 180%;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px  rgb(66, 66, 66);
   }
   .card .back a:hover {
-    background: #fff;
-    color: #333;
-    text-shadow: 0 0 1px #333;
+    background: rgb(252, 252, 252);
+    color: rgb(14, 14, 14);
+    text-shadow: 0 0 1px rgb(39, 39, 39);
   }
   .cardBox:nth-child(1) .card .back {
-    background: #ffcc00;
+    background: #F4531C;
   }
   .cardBox:nth-child(2) .card .back {
-    background: #1c87c9;
+    background: #ff537b;
   }
   .cardBox:nth-child(3) .card .back {
     background: #ff6347;
